@@ -123,7 +123,7 @@ navLinks.forEach(link => {
 const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 600) {
+    if (window.scrollY > 1300) {
         nav.classList.add('nav-fixed');
         // console.log(nav)
     } else {
@@ -213,7 +213,12 @@ btnContact.forEach((btn) => {
 
 btnContactCancel.addEventListener('click', () => {
     contact.classList.add('none')
-    nav.style.height = '100%'
+    if (hamburgerOpen.classList.contains('hamburger-open-active')) {
+        nav.style.height = '100%'
+        nav.style.opacity = '1'
+        return;
+    }
+    nav.style.height = 'auto'
     nav.style.opacity = '1'
 })
 
