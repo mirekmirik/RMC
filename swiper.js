@@ -123,7 +123,7 @@ navLinks.forEach(link => {
 const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 900) {
+    if (window.scrollY > 1000) {
         nav.classList.add('nav-fixed');
         // console.log(nav)
     } else {
