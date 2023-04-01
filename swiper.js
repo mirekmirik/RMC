@@ -123,15 +123,19 @@ navLinks.forEach(link => {
 const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 1000) {
+    if (window.scrollY > 1300) {
         nav.classList.add('nav-fixed');
+        console.log('ss')
+        return;
         // console.log(nav)
     } else {
         if (hamburgerOpen.classList.contains('hamburger-open-active')) return;
-        nav.classList.remove('nav-fixed');
+        if(window.scrollY < 1200) {
+            nav.classList.remove('nav-fixed');
+            console.log('ss')
+        }
     }
     if (windowWithNow > 600) {
-
         const currentSection = getCurrentSection(sections);
         const currentLink = nav.querySelector(`a[href="#${currentSection.id}"]`);
         setActiveLink(currentLink);
@@ -213,7 +217,12 @@ btnContact.forEach((btn) => {
 
 btnContactCancel.addEventListener('click', () => {
     contact.classList.add('none')
-    nav.style.height = '100%'
+    if (hamburgerOpen.classList.contains('hamburger-open-active')) {
+        nav.style.height = '100%'
+        nav.style.opacity = '1'
+        return;
+    }
+    nav.style.height = 'auto'
     nav.style.opacity = '1'
 })
 
