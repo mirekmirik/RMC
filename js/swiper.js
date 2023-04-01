@@ -125,13 +125,17 @@ const sections = document.querySelectorAll('section');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1300) {
         nav.classList.add('nav-fixed');
+        console.log(window.scrollY)
+        return;
         // console.log(nav)
     } else {
         if (hamburgerOpen.classList.contains('hamburger-open-active')) return;
-        nav.classList.remove('nav-fixed');
+        if(window.scrollY < 1100) {
+            nav.classList.remove('nav-fixed');
+            console.log(window.scrollY)
+        }
     }
     if (windowWithNow > 600) {
-
         const currentSection = getCurrentSection(sections);
         const currentLink = nav.querySelector(`a[href="#${currentSection.id}"]`);
         setActiveLink(currentLink);
