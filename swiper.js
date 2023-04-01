@@ -60,7 +60,6 @@ createOrDestroySwiper1()
 
 const firstSection = document.querySelector('.first-section')
 const nav = firstSection.querySelector('.nav')
-console.log(nav)
 
 
 const secondSection = document.querySelector('.second-section')
@@ -125,14 +124,12 @@ const sections = document.querySelectorAll('section');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1300) {
         nav.classList.add('nav-fixed');
-        console.log('ss')
         return;
         // console.log(nav)
     } else {
         if (hamburgerOpen.classList.contains('hamburger-open-active')) return;
-        if(window.scrollY < 1200) {
+        if(window.scrollY < 1100) {
             nav.classList.remove('nav-fixed');
-            console.log('ss')
         }
     }
     if (windowWithNow > 600) {
@@ -206,7 +203,6 @@ onClickHamburger()
 btnContact.forEach((btn) => {
     btn.addEventListener('click', () => {
         // const contact = document.querySelector('.contact-wrapper')
-        console.log(contact)
         if (contact.classList.contains('none')) {
             contact.classList.remove('none')
         } else {
@@ -228,7 +224,6 @@ btnContactCancel.addEventListener('click', () => {
 
 btnContactSend.addEventListener('click', (event) => {
     event.preventDefault()
-    console.log('успешно отправлено!')
     contact.classList.add('none')
     contactSuccess.classList.remove('none')
     setTimeout(() => {
