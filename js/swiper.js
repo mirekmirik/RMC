@@ -125,7 +125,7 @@ const sections = document.querySelectorAll('section');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 600) {
         nav.classList.add('nav-fixed');
-        console.log(nav)
+        // console.log(nav)
     } else {
         if (hamburgerOpen.classList.contains('hamburger-open-active')) return;
         nav.classList.remove('nav-fixed');
@@ -217,7 +217,8 @@ btnContactCancel.addEventListener('click', () => {
     nav.style.opacity = '1'
 })
 
-btnContactSend.addEventListener('click', () => {
+btnContactSend.addEventListener('click', (event) => {
+    event.preventDefault()
     console.log('успешно отправлено!')
     contact.classList.add('none')
     contactSuccess.classList.remove('none')

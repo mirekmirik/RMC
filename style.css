@@ -882,7 +882,7 @@ li:hover {
 }
 
 .star {
-  background: url("/img//second-section/star.svg");
+  background: url("./img//second-section/star.svg");
 }
 
 .percent--1 {
