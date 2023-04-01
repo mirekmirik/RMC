@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>RMC</title>
+</head>
+
+<body>
+
+    <div class="contact-successfull none" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+        <p>Форма успешно отправлена! Ожидайте звонка или письма✔️</p>
+    </div>
+
+    <div class="contact-wrapper none">
+        <div class="contact-cancel">X</div>
+        <div class="contact-form">
+            <form class="contact-form__data">
+                <div class="contact-div rl">CONTACT</div>
+                <label for="name">Type your name</label>
+                <input type="text" id="name">
+                <label for="phone">Type your phone number (optional)</label>
+                <input type="number" id="phone">
+                <label for="email">Type your email</label>
+                <input type="text" id="email">
+                <button type="submit" class="contact-btn-send btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="first-section" id="home" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="first-section__container">
+            <div class="wrappers">
+                <div class="left-wrapper">
+                    <nav class="nav">
+                        <div class="logo">
+                            <h1 class="logo__text rl"><a href="#home">RMC</a></h1>
+                        </div>
+                        <div class="hamburger">
+                            <!-- <img src="img/hamburger.svg" alt="hamburger"> -->
+                            <div class="hamburger-first-line"></div>
+                            <div class="hamburger-second-line"></div>
+                            <div class="hamburger-third-line"></div>
+
+                        </div>
+
+                        <ul class="list">
+                            <li class="list-item"><a href="#thestudio">THE STUDIO</a></li>
+                            <li class="list-item"><a href="#projects">PROJECTS</a></li>
+                            <li class="list-item"><a href="#architectures">ARCHITECTURES</a></li>
+                            <li class="list-item"><a href="#blog">BLOG</a></li>
+                        </ul>
+                        <div class="hamburger-open">
+                            <ul class="list none">
+                                <li class="list-item"><a href="#thestudio">THE STUDIO</a></li>
+                                <li class="list-item"><a href="#projects">PROJECTS</a></li>
+                                <li class="list-item"><a href="#architectures">ARCHITECTURES</a></li>
+                                <li class="list-item"><a href="#blog">BLOG</a></li>
+                                <button class="contact-btn">CONTACT</button>
+                            </ul>
+                        </div>
+                        <!-- <div class="contact">
+                            <span>contact</span>
+                        </div> -->
+                    </nav>
+                    <div class="left-wrapper__text">
+                        <img src="./img/path.svg" alt="path" class="left-wrapper__img-path">
+                        <h2 class="left-wrapper__text-design rl">ARCHITECTURE DESIGN</h2>
+                        <h1 class="left-wrapper__text-big rl">PROFESSIONAL INTERIOR DESIGN</h1>
+                        <p class="left-wrapper__text-small">Design for now with the awareness of yesterday and unknown
+                            tomorrow. Because small details make the perfect design. Helping you choose between good and
+                            best.</p>
+                        <button class="contact-btn left-wrapper__button">Let's Work Together</button>
+                    </div>
+
+                    <div class="left-wrapper__footer">
+                        <h1 class="left-wrapper__footer-text">INTERIOR</h1>
+                    </div>
+                </div>
+                <div class="right-wrapper">
+                    <div class="img-wrapper">
+                        <img src="./img/first-section__img.jpg" alt="background" class="first-section__img" />
+                        <button class="right-wrapper__btn contact-btn">CONTACT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="second-section" id="thestudio">
+        <div class="top-services" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <h2 class="top-services__text rl">TOP SERVICES</h2>
+            <div class="top-services__image-wrapper swiper mySwiper">
+                <h1 class="top-services__big-text rl">Our Specializations</h1>
+                <!-- <span class="top-services__big-text rl">Our Specializations</span> -->
+                <div class="top-services__images swiper-wrapper">
+
+                    <div class="top-services__image s-image--1 swiper-slide">
+                        <div class="top-services__image-fade">
+                            <h3 class="top-services__image-fade-b-text rl">Floor plan</h3>
+                            <p class="top-services__image-fade-s-text">Tempor incididunt ut labore et dolore magna
+                                aliqua. </p>
+                        </div>
+                    </div>
+
+                    <div class="top-services__image s-image--2 swiper-slide">
+                        <div class="top-services__image-fade">
+                            <h3 class="top-services__image-fade-b-text rl">Interior Design</h3>
+                            <p class="top-services__image-fade-s-text">Tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad</p>
+                        </div>
+                    </div>
+
+                    <div class="top-services__image s-image--3 swiper-slide">
+                        <div class="top-services__image-fade">
+                            <h3 class="top-services__image-fade-b-text rl">Architecture Design</h3>
+                            <p class="top-services__image-fade-s-text">Tempor incididunt ut labore et dolore magna
+                                aliqua.</p>
+                        </div>
+                    </div>
+
+                    <div class="top-services__image s-image--4 swiper-slide">
+                        <div class="top-services__image-fade">
+                            <h3 class="top-services__image-fade-b-text rl">Construction</h3>
+                            <p class="top-services__image-fade-s-text">Tempor incididunt ut labore et dolore magna
+                                aliqua.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="design">
+                <h1>DESIGN</h1>
+            </div>
+        </div>
+
+        <div class="about-us" data-aos="zoom-out-up">
+            <div class="container">
+                <div class="about-us__content">
+                    <div class="about-us__left">
+                        <img src="./img/path.svg" alt="path" class="about-us__left-path-img">
+                        <hr class="about-us__line line">
+                        <div class="about-us__text">
+                            <h2 class="about-us__text-b rl">About Us</h2>
+                            <p class="about-us__text-s">As development continues, engineers may visit building
+                                destinations
+                                to
+                                guarantee
+                                that temporary workers
+                                pursue the plan, keep to the timetable, utilize the predefined materials, and meet
+                                work-quality
+                                models.
+                            </p>
+                        </div>
+                        <div class="about-us__clients">
+                            <p class="about-us__clients-percent rl">85<span class="percent--1 rl">%</span></p>
+                            <p class="about-us__clients-text">Satisfied
+                                Clients</p>
+                        </div>
+                        <div class="about-us__left-images">
+                            <img src="./img/second-section/about-us-left.jpg" alt="about-us">
+                            <div class="about-us__left-image">
+                                <div class="about-us__left-image--2">
+                                    <div class="about-us__star star"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="about-us__right">
+                        <img src="./img/second-section/about-us-right-2.jpg" alt="rigth1">
+                        <img src="./img/second-section/about-us-right-1.jpg" alt="rigth1">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="third-section" id="projects" data-aos="flip-up" data-aos-duration="1000">
+        <div class="our-projects container">
+            <h2 class="our-projects__text rl">OUR PROJECT</h2>
+            <div class="our-projects__options">
+                <p class="our-projects__options-text rl">Our Latest Projects</p>
+                <nav class="our-projects__options-nav">
+                    <ul class="our-projects__options-list">
+                        <li class="our-projects__options-list-item active">All
+                            <hr class="active-hr">
+                        </li>
+                        <li class="our-projects__options-list-item">Architecture</li>
+                        <li class="our-projects__options-list-item">Construction</li>
+                        <li class="our-projects__options-list-item">Interior Design</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="our-projects__imgs-wrapper">
+                <div class="our-projects__img-wrapper">
+                    <img src="./img/third-section/Rectangle 725.jpg" alt="interier1">
+                </div>
+                <div class="our-projects__img-wrapper">
+                    <img src="./img/third-section/Rectangle 726.jpg" alt="interier2">
+                </div>
+                <div class="our-projects__img-wrapper">
+                    <img src="./img/third-section/Rectangle 727.jpg" alt="interier3">
+                </div>
+                <div class="our-projects__img-wrapper">
+                    <img src="./img/third-section/Rectangle 728.jpg" alt="interier4">
+                </div>
+                <div class="our-projects__img-wrapper">
+                    <img src="./img/third-section/Rectangle 754.jpg" alt="interier5">
+                </div>
+                <div class="our-projects__img-wrapper">
+                    <img src="./img/third-section/Rectangle 755.jpg" alt="interier6">
+                </div>
+                <div class="our-projects__img-wrapper">
+                    <img src="./img/third-section/Rectangle 756.jpg" alt="interier7">
+                </div>
+                <div class="our-projects__img-wrapper">
+                    <img src="./img/third-section/Rectangle 757.jpg" alt="interier8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fourth-section" id="architectures" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+        <div class="digital">
+            <div class="digital-img__wrapper">
+                <img src="./img/fourth-section/floor-plan.svg" alt="floor-plan">
+            </div>
+            <div class="digital-text__wrapper">
+                <h2 class="digital-text-b rl">We Create Digital Experience</h2>
+                <div class="digital-text__wrapper-percents">
+                    <div class="digital-percent">
+                        <p class="digital-percent-number rl">75<span class="percent--2 rl">%</span></p>
+                        <p class="digital-percent-category">Architecture</p>
+                    </div>
+                    <div class="digital-percent">
+                        <p class="digital-percent-number rl">85<span class="percent--2 rl">%</span></p>
+                        <p class="digital-percent-category">Construction</p>
+                    </div>
+                    <div class="digital-percent">
+                        <p class="digital-percent-number rl">65<span class="percent--2 rl">%</span></p>
+                        <p class="digital-percent-category">Interior Design</p>
+                    </div>
+                </div>
+                <button class="digital-button contact-btn">Let's Work Together</button>
+            </div>
+
+            <div class="r rl">
+                R
+            </div>
+        </div>
+    </section>
+
+    <section class="fifth-section" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+        <div class="availability container">
+            <div class="availability-wrapper">
+                <div class="availability-wrapper__left">
+                    <h2 class="availability__text-s rl">OUR PROJECT</h2>
+                    <p class="availability__text-b rl">Check Availability</p>
+                    <div class="table-container">
+                        <div class="table">
+                            <div class="table-row table-header rl">
+                                <div class="table-cell-column">Residence</div>
+                                <div class="table-cell-column">Bed/Bath</div>
+                                <div class="table-cell-column">SQ. FT.</div>
+                                <div class="table-cell-column">Sale Price</div>
+                                <div class="table-cell-column">Rent Price</div>
+                                <div class="table-cell-column">Floor Plan</div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell-title">LUX APARTMENT</div>
+                                <div class="table-cell">3/2</div>
+                                <div class="table-cell">110</div>
+                                <div class="table-cell">$350,000</div>
+                                <div class="table-cell">$2,500</div>
+                                <div class="table-cell"><a href="#">VIEW NOW</a></div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell-title">THE GREEN VILLA</div>
+                                <div class="table-cell">3/3</div>
+                                <div class="table-cell">1120</div>
+                                <div class="table-cell">$194,000</div>
+                                <div class="table-cell">$3,500</div>
+                                <div class="table-cell"><a href="#">VIEW NOW</a></div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell-title">PENTHOUSE</div>
+                                <div class="table-cell">3/3</div>
+                                <div class="table-cell">320</div>
+                                <div class="table-cell">$240,000</div>
+                                <div class="table-cell">$2,500</div>
+                                <div class="table-cell"><a href="#">VIEW NOW</a></div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell-title">SPA LUXURY</div>
+                                <div class="table-cell">3/3</div>
+                                <div class="table-cell">520</div>
+                                <div class="table-cell">$520,000</div>
+                                <div class="table-cell">$9,000</div>
+                                <div class="table-cell"><a href="#">VIEW NOW</a></div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell-title">DUPLEX 13A</div>
+                                <div class="table-cell">3/3</div>
+                                <div class="table-cell">50</div>
+                                <div class="table-cell">$150,000</div>
+                                <div class="table-cell">$1,900</div>
+                                <div class="table-cell"><a href="#">VIEW NOW</a></div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell-title">STUDIO 8A</div>
+                                <div class="table-cell">3/3</div>
+                                <div class="table-cell">99</div>
+                                <div class="table-cell">$50,000</div>
+                                <div class="table-cell">$900</div>
+                                <div class="table-cell"><a href="#">VIEW NOW</a></div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell-title">SIMPLEX 12A8</div>
+                                <div class="table-cell">3/3</div>
+                                <div class="table-cell">100</div>
+                                <div class="table-cell">$120,000</div>
+                                <div class="table-cell">$1,000</div>
+                                <div class="table-cell"><a href="#">VIEW NOW</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="availability-wrapper__right">
+                    <hr class="availability__line line">
+                    <p class="availability__text-p">The unique architect with ideas from outside the world. Where design
+                        and science meet. With people’s comfort in mind</p>
+                    <div class="availability__img">
+                        <img src="img/fifth-section/apartment.jpg" alt="apartment">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sixth-section" id="blog" data-aos="flip-down" data-aos-duration="1000">
+        <div class="meet container">
+            <div class="meet-text__wrapper">
+                <img src="./img/sixth-section/path.svg" alt="path">
+                <h2 class="meet-text-s rl">OUR TEAM</h2>
+                <p class="meet-text-b rl">Meet With Our Team</p>
+            </div>
+
+            <div class="meet-team-wrapper">
+                <div class="meet-img__wrapper">
+                    <img src="img/sixth-section/team.jpg" alt="team">
+                </div>
+
+                <div class="meet-team">
+                    <p>Cody Fisher - CEO</p>
+                    <hr class="meet-hr">
+                    <p>Savannah Nguyen - Interior architect</p>
+                    <hr class="meet-hr">
+
+                    <p>Jerome Bell - Interior</p>
+                    <hr class="meet-hr">
+
+                    <p>Cameron Williamson - architect</p>
+                    <hr class="meet-hr">
+
+                    <p>Marvin McKinney - COnstruction head</p>
+                    <hr class="meet-hr">
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="seventh-section" data-aos="flip-up" data-aos-duration="1000">
+        <div class="swiper mySwiper1">
+            <div class="images-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/img/seventh-section/Rectangle 744.jpg" alt="floor1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/seventh-section/Rectangle 745.jpg" alt="floor2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/seventh-section/Rectangle 746.jpg" alt="floor3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/seventh-section/Rectangle 747.jpg" alt="floor4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/seventh-section/Rectangle 748.jpg" alt="floor5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/seventh-section/Rectangle 758.jpg" alt="floor6">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/seventh-section/Rectangle 759.jpg" alt="floor7">
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <footer class="footer" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="footer-wrapper container">
+            <div class="footer-column">
+                <div class="footer-text-wrapper">
+                    <div class="footer-logo logo__text rl">RMC</div>
+                    <div class="footer-description">
+                        Take a look at how we designed this house. Simply random text. It has roots in a piece of
+                        classical
+                        Latin literature from 45 BC, making it over 2000 years old.
+                    </div>
+
+                </div>
+                <hr class="line">
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column--1">
+                    <ul class="footer-nav">
+                        <li><a href="#" class="active">THE STUDIO</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">ARCHITECTURE</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                    <hr class="line">
+                </div>
+                <div class="footer-column--2">
+                    <div class="footer-visit rl">Visit</div>
+                    <div class="footer-address">Logan Barker, 865 Oak Boulevard, Elk Grove, Vermont 95184</div>
+                    <div class="footer-call rl">Call</div>
+                    <div class="footer-phone">+88 017-6153-1774</div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <div class="copyright">
+        <hr class="copyright-line">
+        <div class="copyright-text">
+            <p>© Copyright 2022 Email: <span>Asibulasik@gmail.com</span></p>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
